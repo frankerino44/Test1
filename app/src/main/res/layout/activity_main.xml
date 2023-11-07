@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/NameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="75dp"
+        android:text="@string/NameLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/NumberTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/NumberLabel"
+        app:layout_constraintStart_toStartOf="@+id/NameTV"
+        app:layout_constraintTop_toBottomOf="@+id/NameTV" />
+
+    <TextView
+        android:id="@+id/TypeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/TypeLabel"
+        app:layout_constraintStart_toStartOf="@+id/NumberTV"
+        app:layout_constraintTop_toBottomOf="@+id/NumberTV" />
+
+    <TextView
+        android:id="@+id/FandomTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/FandomLabel"
+        app:layout_constraintStart_toStartOf="@+id/TypeTV"
+        app:layout_constraintTop_toBottomOf="@+id/TypeTV" />
+
+    <TextView
+        android:id="@+id/OnTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/OnLabel"
+        app:layout_constraintStart_toStartOf="@+id/FandomTV"
+        app:layout_constraintTop_toBottomOf="@+id/FandomTV" />
+
+    <TextView
+        android:id="@+id/UltimateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/UltimateLabel"
+        app:layout_constraintStart_toStartOf="@+id/OnTV"
+        app:layout_constraintTop_toBottomOf="@+id/OnTV" />
+
+    <TextView
+        android:id="@+id/PriceTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/PriceLabel"
+        app:layout_constraintStart_toStartOf="@+id/UltimateTV"
+        app:layout_constraintTop_toBottomOf="@+id/UltimateTV" />
+
+    <EditText
+        android:id="@+id/NameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/NameTV"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/NumberET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/NumberTV"
+        app:layout_constraintEnd_toEndOf="@+id/NameET" />
+
+    <EditText
+        android:id="@+id/TypeET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Type"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/TypeTV"
+        app:layout_constraintEnd_toEndOf="@+id/NumberET" />
+
+    <EditText
+        android:id="@+id/FandomET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Fandom"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/FandomTV"
+        app:layout_constraintEnd_toEndOf="@+id/TypeET" />
+
+    <Switch
+        android:id="@+id/OnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On"
+        app:layout_constraintBaseline_toBaselineOf="@+id/OnTV"
+        app:layout_constraintEnd_toEndOf="@+id/NameET"
+        app:layout_constraintStart_toStartOf="@+id/NameET" />
+
+    <EditText
+        android:id="@+id/UltimateET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Ultimate"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/UltimateTV"
+        app:layout_constraintEnd_toEndOf="@+id/FandomET" />
+
+    <EditText
+        android:id="@+id/PriceET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/PriceTV"
+        app:layout_constraintEnd_toEndOf="@+id/UltimateET" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

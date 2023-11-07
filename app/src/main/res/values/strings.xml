@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Test1</string>
+    <string name="NameLabel">Name</string>
+    <string name="NumberLabel">Number</string>
+    <string name="TypeLabel">Type</string>
+    <string name="FandomLabel">Fandom</string>
+    <string name="OnLabel">On</string>
+    <string name="UltimateLabel">Ultimate</string>
+    <string name="PriceLabel">Price</string>
+</resources>
